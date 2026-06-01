@@ -6,9 +6,11 @@ The app is the Redux version of the Bloglist app from parts 4–7, restructured 
 
 ## Structure
 
-├── backend/         # Express.js REST API + MongoDB
-├── frontend/        # React + Redux + Vite
-└── e2e-tests/       # Playwright end-to-end tests/
+```
+├── backend/      # Express.js REST API + MongoDB
+├── frontend/     # React + Redux + Vite
+└── e2e-tests/    # Playwright end-to-end tests
+```
 
 ## Tech Stack
 
@@ -30,7 +32,7 @@ On every push to `main`:
 
 ## Live App
 
-🔗 [link once deployed]
+🔗 [fullstackopen-bloglist-cicd-n0dk.onrender.com](https://fullstackopen-bloglist-cicd-n0dk.onrender.com)
 
 ## Related
 
