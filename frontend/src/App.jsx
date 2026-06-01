@@ -13,7 +13,7 @@ import User from './components/User'
 import userService from './services/users'
 import BlogList from './components/BlogList'
 import BlogView from './components/BlogView'
-import Navbar from './components/NavBar'
+import Navbar from './components/Navbar'
 import { Box, Container, Paper } from '@mui/material'
 import Footer from './components/Footer'
 
