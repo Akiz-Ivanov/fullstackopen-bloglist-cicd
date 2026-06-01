@@ -158,6 +158,11 @@ describe("Blog app", () => {
       test("blogs are ordered by number of likes (descending)", async ({
         page,
       }) => {
+        // Wait for all three blogs to be visible before starting
+        await expect(page.getByRole("link", { name: "first" })).toBeVisible();
+        await expect(page.getByRole("link", { name: "second" })).toBeVisible();
+        await expect(page.getByRole("link", { name: "third" })).toBeVisible();
+
         // THIRD -> 2 likes
         await page.getByRole("link", { name: "third" }).click();
         await page.getByRole("button", { name: /like/i }).click();
