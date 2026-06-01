@@ -11,10 +11,6 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:3003',
     trace: 'on-first-retry',
-  },
-  use: {
-    baseURL: 'http://localhost:3003',
-    trace: 'on-first-retry',
     actionTimeout: 15000,
   },
   expect: {
