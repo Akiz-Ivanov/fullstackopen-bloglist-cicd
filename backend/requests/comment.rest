@@ -1,0 +1,7 @@
+POST http://localhost:3003/api/blogs/688cef8054ccb7ee748ddb0e/comments
+Content-Type: application/json
+Authorization: Bearer {{$dotenv JWT_TEST_TOKEN}}
+
+{
+  "comment": "Testing again"
+}

@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer {{$dotenv JWT_TEST_TOKEN}}
+
+{
+  "title": "14 Tips for Clean Express Code",
+  "author": "Anna",
+  "url": "https://devblog.io/clean-express-code",
+  "likes": 17,
+  "userId": "6887b3b80084c115fdf7944b"
+}
