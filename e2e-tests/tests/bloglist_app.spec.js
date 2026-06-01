@@ -165,12 +165,14 @@ describe("Blog app", () => {
         await page.getByRole("button", { name: /like/i }).click();
         await expect(page.getByText("Likes: 2")).toBeVisible();
         await page.goBack();
+        await expect(page.getByRole("link", { name: "third" })).toBeVisible();
 
         // FIRST -> 1 like
         await page.getByRole("link", { name: "first" }).click();
         await page.getByRole("button", { name: /like/i }).click();
         await expect(page.getByText("Likes: 1")).toBeVisible();
         await page.goBack();
+        await expect(page.getByRole("link", { name: "first" })).toBeVisible();
 
         // SECOND -> 3 likes
         await page.getByRole("link", { name: "second" }).click();
@@ -181,6 +183,7 @@ describe("Blog app", () => {
         await page.getByRole("button", { name: /like/i }).click();
         await expect(page.getByText("Likes: 3")).toBeVisible();
         await page.goBack();
+        await expect(page.getByRole("link", { name: "second" })).toBeVisible();
 
         const blogs = page.getByTestId("blog-item");
         await expect(blogs.nth(0)).toContainText("second");
