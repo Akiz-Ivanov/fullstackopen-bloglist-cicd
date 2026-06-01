@@ -17,6 +17,8 @@ export default defineConfig({
     url: 'http://localhost:3003',
     cwd: '../backend',
     reuseExistingServer: !process.env.CI,
+    stdout: 'pipe',
+    stderr: 'pipe',
   },
   projects: [
     {
