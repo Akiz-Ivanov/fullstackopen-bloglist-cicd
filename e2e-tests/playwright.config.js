@@ -12,6 +12,14 @@ export default defineConfig({
     baseURL: 'http://localhost:3003',
     trace: 'on-first-retry',
   },
+  use: {
+    baseURL: 'http://localhost:3003',
+    trace: 'on-first-retry',
+    actionTimeout: 15000,
+  },
+  expect: {
+    timeout: 15000,
+  },
   webServer: {
     command: 'npm run start:test',
     url: 'http://localhost:3003',
