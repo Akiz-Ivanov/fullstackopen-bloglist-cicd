@@ -53,7 +53,7 @@ const darkTheme = createTheme({
 
 const getInitialMode = () => {
   const saved = localStorage.getItem("themeMode")
-  return saved === "dark" ? "dark" : "light"
+  return saved === "light" ? "light" : "dark"
 }
 
 const store = configureStore({
