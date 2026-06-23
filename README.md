@@ -4,6 +4,17 @@ A full-stack blog listing application built as part of [Full Stack Open](https:/
 
 The app is the Redux version of the Bloglist app from parts 4–7, restructured into a monorepo with a full CI/CD pipeline via GitHub Actions.
 
+## Live App
+
+🔗 [fullstackopen-bloglist-cicd-n0dk.onrender.com](https://fullstackopen-bloglist-cicd-n0dk.onrender.com)
+
+## Test Account
+
+To explore the app without registering:
+
+- **Username:** `demo`
+- **Password:** `demo123`
+
 ## Structure
 
 ```
@@ -30,9 +41,6 @@ On every push to `main`:
 5. Deploy to Render
 6. Discord notification + version tag
 
-## Live App
-
-🔗 [fullstackopen-bloglist-cicd-n0dk.onrender.com](https://fullstackopen-bloglist-cicd-n0dk.onrender.com)
 
 ## Related
 
