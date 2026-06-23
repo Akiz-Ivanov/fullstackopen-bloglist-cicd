@@ -3,8 +3,6 @@ services:
     build:
       context: ./backend/mongo
       dockerfile: Dockerfile
-    ports:
-      - 27017:27017
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
@@ -17,8 +15,6 @@ services:
     build:
       context: ./backend
       dockerfile: dev.Dockerfile
-    ports:
-      - 3003:3003
     volumes:
       - ./backend:/usr/src/app
       - /usr/src/app/node_modules
@@ -35,8 +31,6 @@ services:
     build:
       context: ./frontend
       dockerfile: dev.Dockerfile
-    ports:
-      - 5173:5173
     volumes:
       - ./frontend:/usr/src/app
       - /usr/src/app/node_modules

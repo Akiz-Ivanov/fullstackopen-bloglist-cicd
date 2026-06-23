@@ -5,3 +5,4 @@ dist
 Dockerfile
 dev.Dockerfile
 npm-debug.log
+coverage
