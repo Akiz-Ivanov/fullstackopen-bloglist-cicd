@@ -8,6 +8,7 @@ export default defineConfig({
     host: true,
     port: 5173,
     strictPort: true,
+    allowedHosts: ['frontend', 'localhost'],
     proxy: {
       '/api': {
         target: 'http://localhost:3003',
